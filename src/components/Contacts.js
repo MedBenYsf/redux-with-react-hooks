@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Contacts = () => {
-	const myContacts = [ { id: 1, name: 'Med' }, { id: 2, name: 'Mouna' }, { id: 3, name: 'Yassine' } ];
-	const [ contacts, setContacts ] = useState(myContacts);
+	const contacts = useSelector((state) => state.contacts);
 	return (
 		<div>
 			<h2>Contacts list</h2>
