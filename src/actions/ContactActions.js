@@ -4,3 +4,10 @@ export const addContact = (contact) => {
 		payload: contact
 	};
 };
+
+export const deleteContact = (id) => {
+	return {
+		type: 'DELETE_CONTACT',
+		payload: id
+	};
+};
